@@ -1,0 +1,51 @@
+models:
+  - name: Mistral-7B
+    provider: huggingface
+    model: mistralai/Mistral-7B-Instruct-v0.2
+    local_download: true
+    cost_sensitive: false
+
+  - name: TinyLlama
+    provider: huggingface
+    model: TinyLlama/TinyLlama-1.1B-Chat-v1.0
+    local_download: true
+
+  - name: GPT-4
+    provider: openai
+    model: gpt-4
+    requires_api_key: true
+
+  - name: Claude
+    provider: anthropic
+    model: claude-3-sonnet-20240229
+    requires_api_key: true
+
+  - name: Phi-2
+    provider: huggingface
+    model: microsoft/phi-2
+    local_download: true
+
+  - name: LLaMA-3
+    provider: huggingface
+    model: meta-llama/Meta-Llama-3-8B
+    local_download: true
+
+  - name: GPT-3.5
+    provider: openai
+    model: gpt-3.5-turbo
+    requires_api_key: true
+
+  - name: Cohere Command R+
+    provider: cohere
+    model: command-r-plus
+    requires_api_key: true
+
+  - name: Yi-34B
+    provider: huggingface
+    model: 01-ai/Yi-34B-Chat
+    local_download: true
+
+  - name: Falcon-7B
+    provider: huggingface
+    model: tiiuae/falcon-7b-instruct
+    local_download: true
