@@ -1,7 +1,8 @@
-# TheJudge v2
+# Changelog v2
 
-- Judge model selection (e.g., GPT-4, Claude, open-source)
-- Model performance tracking (latency, win/loss)
-- Verdict history support (logging hooks)
-- Prometheus metrics endpoint (stubbed)
-- API key mode + optional rate limiting
+- Judge selector
+- Verdict win/loss tracking
+- Prometheus metrics stub
+- SQLite + JSONL verdict logging
+- Docker + Docker Compose
+- Helm support coming soon
