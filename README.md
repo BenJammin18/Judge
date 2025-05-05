@@ -1,21 +1,17 @@
-# TheJudge v1
+# TheJudge v2
 
-Welcome to TheJudge — an AI courtroom where multiple LLMs (jurors) argue over your prompt, and Judge J.U.D.Y. delivers the verdict.
+This is the full deployment-ready version of TheJudge with Judge J.U.D.Y., async jurors, verdict tracking, and container support.
+
+## Run Locally
+```
+docker-compose up --build
+```
 
 ## Features
-- Choose your jurors (2–10)
-- Auto-judging with Judge J.U.D.Y.
-- Manual override ("Take the Gavel")
-- Retrial option if you disagree
-- Thumbs up/down feedback for the judge
-- FastAPI + Streamlit hybrid with API-only mode
-- Helm chart + Docker support
-
-See `roadmap.md` for what's coming next.
-
-## Usage
-```bash
-make docker-local   # build for Docker Desktop
-make dev            # run Streamlit locally
-make deploy-eks     # deploy to EKS via Helm
-```
+- Judge J.U.D.Y. selection
+- 10 juror models (mocked)
+- Verdict logging
+- Win/loss hooks
+- Rate limiting (stub)
+- Prometheus metrics (stub)
+- Streamlit UI + API backend
